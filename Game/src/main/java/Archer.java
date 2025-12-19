@@ -1,6 +1,9 @@
+//Done by Mohamed Aber 2304260
+
 import javafx.scene.paint.Color;
 public class Archer extends Character {
     public Archer(String name, int x, int y, Color color) {
         super(name, 100, x, y, color);
     }
+
 }
