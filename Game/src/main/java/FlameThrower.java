@@ -1,3 +1,5 @@
+//Done by Mohamed Ashraf 2304059
+
 import javafx.scene.paint.Color;
 
 public class FlameThrower extends Weapons {
@@ -12,4 +14,5 @@ public class FlameThrower extends Weapons {
         p.getSprite().setRadius(12);
         return p;
     }
+
 }
