@@ -1,3 +1,5 @@
+//Done by Mohamed Ashraf 2304059
+
 import javafx.scene.paint.Color;
 public class Sword extends Weapons {
     public Sword() {
@@ -10,4 +12,5 @@ public class Sword extends Weapons {
         p.getSprite().setRadius(7);
         return p;
     }
+
 }
