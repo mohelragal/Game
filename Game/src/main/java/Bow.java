@@ -1,3 +1,4 @@
+//Done by Mohamed Ashraf 2304059
 import javafx.scene.paint.Color;
 
 public class Bow extends Weapons {
@@ -10,4 +11,5 @@ public class Bow extends Weapons {
         p.getSprite().setFill(Color.BLUE);
         return p;
     }
+
 }
