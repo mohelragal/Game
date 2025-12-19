@@ -47,6 +47,7 @@ public class BattleArena extends Application {
         window.setScene(menuScene);
         window.show();
     }
+    //Done by Marwan Tamer 2304015
     private void createMenuScene() {
         VBox layout = new VBox(20);
         layout.setAlignment(Pos.CENTER);
@@ -80,6 +81,7 @@ public class BattleArena extends Application {
         layout.getChildren().addAll(title, gameModeSelect, p1Setup, p2Setup, startBtn);
         menuScene = new Scene(layout, 800, 600);
     }
+    //Done by Ahmed Sameh 2304062
     private void startGame() {
         singlePlayer = gameModeSelect.getValue().equals("Single Player");
 
@@ -117,13 +119,13 @@ public class BattleArena extends Application {
 
         startGameLoop();
     }
-
+//Done by Mohamed Ashraf 2304059
     private Weapons createWeapon(String type) {
         if (type.contains("Sword")) return new Sword();
         if (type.contains("Flame")) return new FlameThrower();
         return new Bow();
     }
-
+//Done by Mohamed Aber 2304260
     private void createGameUI() {
         HBox ui = new HBox(20);
         ui.setAlignment(Pos.CENTER);
@@ -152,7 +154,7 @@ public class BattleArena extends Application {
 
         gameRoot.getChildren().addAll(ui, winnerLabel);
     }
-
+//Done by Mohamed Elragal 2304246
     private void setupInput() {
         gameScene.setOnKeyPressed(e -> {
             activeKeys.add(e.getCode());
@@ -245,7 +247,7 @@ public class BattleArena extends Application {
             gameRoot.getChildren().add(p.getSprite());
         }
     }
-
+//Done by Marwan Tamer 2304015
     private void updateProjectiles() {
         List<Projectile> toRemove = new ArrayList<>();
 
@@ -273,7 +275,7 @@ public class BattleArena extends Application {
 
         checkWinner();
     }
-
+//done by mohamed elragal 2304246
     private void checkWinner() {
         if (player1.isDead() || player2.isDead()) {
             gameLoop.stop();
@@ -300,4 +302,5 @@ public class BattleArena extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
 }
