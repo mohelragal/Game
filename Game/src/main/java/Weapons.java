@@ -1,3 +1,4 @@
+//Done by Mohamed Ashraf 2304059
 public abstract class Weapons {
     protected String type;
     protected int damage;
@@ -25,4 +26,5 @@ public abstract class Weapons {
     }
 
     public abstract Projectile shoot(double x, double y);
+
 }
