@@ -2,7 +2,7 @@
 public abstract class Weapons {
     protected String type;
     protected int damage;
-    protected long cooldown; // ms
+    protected long cooldown;
     protected double speed;
     protected long lastShot = 0;
 
@@ -28,3 +28,4 @@ public abstract class Weapons {
     public abstract Projectile shoot(double x, double y);
 
 }
+
