@@ -6,7 +6,7 @@ import javafx.scene.Group;
 import javafx.scene.image.Image;
 import java.util.ArrayList;
 import java.util.List;
-
+//done by Mohamed elragal 2304260
 public class Character {
     protected String name;
     protected int maxHealth;
@@ -100,3 +100,4 @@ public class Character {
         return currentHealth <= 0;
     }
 }
+
